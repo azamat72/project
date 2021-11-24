@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Yangi o'quvchi qo'shish
+{% endblock title %}
+
+{% block content %}
+<div class="features">
+  <div class="container text-center">
+    <div>
+        <h1>Yangi o'quvchi qo'shish.</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{form.familiyasi}}<br>
+            {{form.ismi}}<br>
+            {{form.yoshi}}<br>
+            {{form.full}}<br>
+            <span>{{ error }}</span>
+            <button type="submit" class="btn btn-success">O'quvchini qo'shish</button>
+
+        </form>
+    </div>
+  </div>   
+</div> 
+{% endblock %}
+
+
+
+
+

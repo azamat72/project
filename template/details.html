@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Ma'lumotlar
+{% endblock title %}
+
+{% block content %}
+
+    <div class="container">
+      <h1 class="text-center" style="padding-top: 20px;">O'quvchi haqida to'liq ma'lumot.</h1>
+      <div class="row" style="padding-top: 30px;">
+        <div class="col text-center">
+          {{lead.failiyasi}} 
+          {{lead.ismi}}
+        </div>
+        <div class="col">
+          {{lead.full}}
+        </div>
+      </div>
+    </div>
+ 
+{% endblock %}
+
+
+
+
+
